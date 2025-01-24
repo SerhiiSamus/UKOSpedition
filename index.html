@@ -30,31 +30,38 @@
         <img class="logo-img" src="./src/img/Logo.png" alt="" />
         <a href="#" class="logo-text">Ukospedition</a>
       </span>
-
-      <nav class="header-nav">
-        <ul>
-          <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="#">Careers</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="#">Contact us</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-nav-content">
+        <nav class="header-nav">
+          <ul>
+            <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-lang">
+          <a href="" class="nav-lang-link active-lang">UA</a>
+          <a href="" class="nav-lang-link">PL</a>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
         <div class="hero-content">
           <div class="hero-info">
-            <h1 class="hero-title">Easy & quick transport solutions</h1>
-            <button class="hero-btn btn">Explore more</button>
+            <h1 class="hero-title">
+              Fast and reliable transport services and logistics
+            </h1>
+            <a href="./about.html" class="hero-btn btn">Explore more</a>
           </div>
 
           <img class="hero-img" src="./src/img/hero-auto.png" alt="" />
@@ -62,12 +69,7 @@
       </section>
       <section class="offer">
         <div class="offer-content">
-          <h2 class="offer-title title">
-            We offers cost
-            <br />
-            effecient Transport <br />
-            shipping
-          </h2>
+          <h2 class="offer-title title">Why Choose Us?</h2>
           <div class="offer-cards">
             <div class="card">
               <img
@@ -109,15 +111,18 @@
         <div class="about-content">
           <span class="about-label label">About company</span>
           <h2 class="about-title title">
-            Global logistics solution provider 1996
+            At UKOspedition, we are a leading transportation company dedicated
+            to providing fast and reliable services across various industries.
           </h2>
           <p class="about-descript">
-            Simplify your freight and logistics needs with a personal approch.
+            Smart, simple, and reliable transport solutions.
           </p>
           <p class="about-info">
-            Explain to you how all this mistaken denouncing pleasure and
-            praising pain was born and we will give you a complete account of
-            the system, voluptate velit and expound the actual teachings
+            We specialize in reliable and efficient transportation and logistics
+            solutions. With a customer-focused approach, we simplify freight
+            management, ensuring smooth and timely deliveries. Whether local or
+            international, we are committed to providing seamless,
+            cost-effective, and tailored logistics services to meet your needs.
           </p>
         </div>
         <img
@@ -158,7 +163,7 @@
               />
               <div class="services-card-info">
                 <p class="services-card-category">Analytics</p>
-                <p class="services-card-descript">Sea freight</p>
+                <p class="services-card-descript">Refrigerator trucks</p>
               </div>
             </div>
             <div
@@ -200,12 +205,12 @@
               />
               <div class="services-card-info">
                 <p class="services-card-category">Analytics</p>
-                <p class="services-card-descript">Sea freight</p>
+                <p class="services-card-descript">Refrigerator trucks</p>
               </div>
             </div>
             <div
               class="swiper-slide"
-              style="background-image: url('./src/img/slide6.jpg')"
+              style="background-image: url('./src/img/slide3.jpg')"
             >
               <img
                 src="./src/img/truck-icon.png"
@@ -224,10 +229,10 @@
         <div class="feedback-content">
           <span class="feedback-label label">Get in touch with us anytime</span>
           <h2 class="title feedback-title">
-            Looking for the best <br />
-            logistics transport service?
+            Looking for fast and <br />
+            efficient transport solutions?
           </h2>
-          <button class="btn feedback-btn">Get a quote</button>
+          <button class="btn feedback-btn" id="openModal">Get a quote</button>
         </div>
       </section>
       <section class="opportunity">
@@ -256,12 +261,13 @@
           <div class="opportunity-info">
             <span class="label opportunity-label">Why Choose Us</span>
             <h2 class="opportunity-title title">
-              We create <br />
-              opportunity to reach potential
+              Connecting potential with success.
             </h2>
             <p class="opportunity-descript">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur
+              UKOspedition delivers seamless logistics and transportation
+              solutions tailored to your needs. With our expertise, timely
+              deliveries, and personalized service, we ensure your freight moves
+              smoothly every time.
             </p>
             <div class="opportinity-cards">
               <div class="card-opportunity">
@@ -525,14 +531,90 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Request a Quote</h2>
+        <form class="form-rows">
+          <!-- Row 1: Email -->
+          <div class="form-row">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
+          <!-- Row 2: Name and Phone -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone No:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+
+          <!-- Row 3: Departure and Deliver -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="departure">Departure:</label>
+              <input type="text" id="departure" name="departure" required />
+            </div>
+            <div class="form-group">
+              <label for="deliver">Deliver:</label>
+              <input type="text" id="deliver" name="deliver" required />
+            </div>
+          </div>
+
+          <!-- Row 4: Freight and Load -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="freight">Freight Type:</label>
+              <select id="freight" name="freight" required>
+                <option value="">Select</option>
+                <option value="type1">Type 1</option>
+                <option value="type2">Type 2</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="load">Load:</label>
+              <select id="load" name="load" required>
+                <option value="">Select</option>
+                <option value="load1">Load 1</option>
+                <option value="load2">Load 2</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Row 5: Submit Button -->
+          <div class="form-row">
+            <button type="submit" class="btn submit">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper('.services-card-swiper', {
-        slidesPerView: 5,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          859: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1124: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+        },
       });
     </script>
   </body>
