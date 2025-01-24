@@ -22,3 +22,14 @@ window.addEventListener('click', (e) => {
     }, 100);
   }
 });
+const button = document.querySelector('.menu__mobile_button');
+const header = document.querySelector('.header-nav-content');
+button.addEventListener('click', () => {
+  button.classList.toggle('active');
+});
+button.addEventListener('click', () => {
+  header.classList.toggle('show');
+});
+button.addEventListener('click', () => {
+  document.body.classList.toggle('no-scroll');
+});

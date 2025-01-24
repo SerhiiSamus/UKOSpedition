@@ -30,6 +30,11 @@
         <img class="logo-img" src="./src/img/Logo.png" alt="" />
         <a href="#" class="logo-text">Ukospedition</a>
       </span>
+      <div class="menu__mobile">
+        <div class="menu__mobile_button">
+          <span></span>
+        </div>
+      </div>
       <div class="header-nav-content">
         <nav class="header-nav">
           <ul>
@@ -248,7 +253,7 @@
           <div class="opportunity-contact-info">
             <span class="opportunity-contact-text">Get professional help</span>
             <span class="opportunity-contact-number semi-title"
-              >92 666 888 0000</span
+              >+48 57 583 18 10</span
             >
           </div>
         </div>
@@ -279,9 +284,9 @@
                 <p class="card-opportunity-descript">
                   Safety & reliable service
                 </p>
-                <p class="card-opportunity-text">
+                <!-- <p class="card-opportunity-text">
                   Nullam mollis elit quis dus is lacinia not efficitur
-                </p>
+                </p> -->
               </div>
               <div class="card-opportunity">
                 <img
@@ -292,9 +297,9 @@
                 <p class="card-opportunity-descript">
                   Real time tracking system
                 </p>
-                <p class="card-opportunity-text">
+                <!-- <p class="card-opportunity-text">
                   Nullam mollis elit quis dus is lacinia not efficitur
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
@@ -309,8 +314,8 @@
             <div class="card-footer-content">
               <p class="card-footer-category">Addres</p>
               <p class="card-footer-text">
-                380 St Kilda Road, Jackson <br />
-                Store, Australia
+                Powstańców 97, 05-870<br />
+                Błonie Poland
               </p>
             </div>
           </div>
@@ -320,7 +325,7 @@
               <p class="card-footer-category">Contact</p>
               <p class="card-footer-text">
                 needhelp@company.com <br />
-                +92 (8800) 48720
+                +48 57 583 18 10
               </p>
             </div>
           </div>
@@ -602,11 +607,15 @@
         spaceBetween: 30,
         loop: true,
         breakpoints: {
+          420: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
           640: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-          859: {
+          850: {
             slidesPerView: 4,
             spaceBetween: 30,
           },

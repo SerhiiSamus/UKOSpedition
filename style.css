@@ -19,14 +19,14 @@ ul {
   padding: 0;
 }
 .title {
-  font-size: clamp(25px, 5vw, 50px);
+  font-size: clamp(25px, 4vw, 50px);
 
   line-height: 120%;
   font-family: 'DM Sans', Sans-serif;
   font-weight: 700;
 }
 .semi-title {
-  font-size: 1.95rem;
+  font-size: clamp(1.45rem, 3vw, 1.95rem);
   line-height: 130%;
   font-family: 'DM Sans', Sans-serif;
   font-weight: 700;
@@ -37,6 +37,71 @@ ul {
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
+}
+.menu__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  display: none;
+  z-index: 10;
+}
+
+.menu__mobile_button {
+  position: relative;
+  height: 26px;
+  width: 40px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menu__mobile_button.active span {
+  opacity: 0;
+}
+
+.menu__mobile_button.active::before,
+.menu__mobile_button.active::after {
+  top: 40%;
+}
+
+.menu__mobile_button.active::before {
+  transform: rotate(45deg);
+}
+
+.menu__mobile_button.active::after {
+  transform: rotate(-45deg);
+}
+
+.menu__mobile_button span,
+.menu__mobile_button::before,
+.menu__mobile_button::after {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.menu__mobile_button::before,
+.menu__mobile_button::after {
+  content: '';
+  transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu__mobile_button span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu__mobile_button::before {
+  top: 0;
+}
+
+.menu__mobile_button::after {
+  top: calc(100% - 3px);
 }
 .header-nav {
   margin-left: 20px;
@@ -149,8 +214,7 @@ ul {
 }
 .hero-title {
   font-family: 'DM Sans', Sans-serif;
-  font-size: 72px;
-  font-size: clamp(36px, 5vw, 72px);
+  font-size: clamp(36px, 4vw, 72px);
   font-weight: 700;
   line-height: 110%;
   color: #ffffff;
@@ -301,12 +365,13 @@ ul {
 .about-descript {
   color: #e77000;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 .about-info {
   color: #767676;
   font-weight: 400;
   font-family: 'Poppins', serif;
+  font-size: clamp(0.6rem, 3vw, 1rem);
 }
 .about-img-bottom {
   position: absolute;
@@ -347,7 +412,7 @@ ul {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(14px, 4vw, 18px);
   background: #fff;
   display: flex;
   justify-content: center;
@@ -581,7 +646,7 @@ ul {
 }
 .card-footer:last-child {
   border-right: none; /* Прибираємо бордер у останнього елемента */
-  padding-right: 0;
+  padding-right: 10px;
 }
 .card-footer-img {
   width: 55px;
@@ -849,6 +914,9 @@ ul {
   align-self: center;
   background-color: #232331;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 @keyframes fadeIn {
   from {
@@ -879,6 +947,9 @@ ul {
   }
   .hero {
     padding-top: 120px;
+  }
+  .hero-content {
+    margin-left: 20px;
   }
   .hero-info {
     width: 60%;
@@ -923,11 +994,16 @@ ul {
   .card-footer {
     padding: 20px;
   }
+  .footer-cards {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
   .footer-content {
     padding-left: 20px;
     padding-right: 20px;
-    column-gap: 10px;
+    gap: 10px;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-company {
     flex: 0 0 45%;
@@ -944,4 +1020,193 @@ ul {
   .footer-policy-wrapper {
     justify-content: space-evenly;
   }
+}
+@media (max-width: 880px) {
+  .menu__mobile {
+    display: block;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .header-nav-content {
+    position: absolute;
+    top: 0;
+    /* bottom: 0; */
+    height: 100vh;
+    flex-direction: column;
+    background-color: #606060;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .header-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .show {
+    transform: translateX(0);
+  }
+  .hero-info {
+    width: 35%;
+  }
+  .about {
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 0;
+  }
+  .about-img-container {
+    margin: auto;
+    margin-top: -35px;
+  }
+  .offer-content {
+    flex-direction: column;
+  }
+  .offer-cards {
+    width: 100%;
+  }
+  .footer-cards {
+    flex-wrap: wrap;
+  }
+  .opportunity {
+    padding-top: 200px;
+  }
+  .card-footer {
+    border-right: none;
+  }
+}
+@media (max-width: 650px) {
+  .opportunity {
+    padding-top: 300px;
+  }
+  .opportunity-contact {
+    flex-direction: column;
+    row-gap: 10px;
+    box-sizing: border-box;
+  }
+  .opportunity-contact-descript {
+    width: auto;
+    text-align: center;
+    margin: 0;
+  }
+  .opportunity-contact-info {
+    width: auto;
+    align-items: center;
+  }
+  .opportunity-content {
+    flex-direction: column;
+  }
+  .opportunity-content-img {
+    width: 100%;
+    min-height: 500px;
+  }
+  .footer-content {
+    justify-content: start;
+  }
+  .footer-company {
+    flex: 0 0 90%;
+  }
+  .footer-newsletter {
+    flex: 0 0 90%;
+  }
+  .hero-info {
+    width: 100%;
+    margin-bottom: 15vw;
+  }
+  .hero-img {
+    min-width: 250px;
+  }
+  .offer-content {
+    align-items: center;
+    padding-top: 0;
+  }
+  .offer-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    margin: auto;
+  }
+  .about-img-big {
+    max-width: 300px;
+  }
+  .about-img-small {
+    max-width: 125px;
+    left: auto;
+    right: 0;
+    bottom: 0;
+  }
+  .about-img-bottom {
+    width: 80%;
+    margin: auto;
+  }
+  .about-info {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-img {
+    min-width: 150px;
+  }
+  .footer-policy-wrapper {
+    flex-wrap: wrap;
+  }
+  .card-footer {
+    padding-right: 0;
+    padding-left: 0;
+    gap: 10px;
+  }
+  .footer-policy {
+    padding-bottom: 20px;
+  }
+  .card-footer-img {
+    width: 35px;
+    height: 35px;
+  }
+  .about-img-big {
+    max-width: 250px;
+  }
+  .services-title,
+  .feedback-title {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .opportunity-info {
+    padding: 75px 25px 25px 25px;
+  }
+  .logo-img {
+    max-height: 50px;
+  }
+  .logo-text {
+    font-size: 18px;
+  }
+  .swiper {
+    padding: 15px !important;
+    box-sizing: border-box;
+  }
+}
+/* * {
+  border: 1px solid red;
+} */
+::-webkit-scrollbar {
+  width: 6px; /* Ширина скролбару */
+}
+
+/* Колір фону скролбару */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Світлий фон */
+}
+
+/* Стиль самого повзунка */
+::-webkit-scrollbar-thumb {
+  background: #e77000; /* Червоний колір */
+  border-radius: 4px; /* Закруглені краї */
+}
+
+/* Робимо повзунок темнішим при наведенні */
+::-webkit-scrollbar-thumb:hover {
+  background: #9f4d00; /* Темно-червоний колір */
 }
