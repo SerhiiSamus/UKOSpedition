@@ -711,6 +711,9 @@ ul {
   margin-left: -15px;
 }
 .footer-compant-btn {
+  display: inline-block;
+  /* margin-top: 20px; */
+  text-decoration: none;
   background: linear-gradient(to right, #e77000 50%, #ffffff 50%);
   background-size: 200%; /* Збільшений фон для ефекту зміщення */
   transition: background-position 0.5s ease, color 0.5s ease;
@@ -803,6 +806,7 @@ ul {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  min-height: 50px;
 }
 .footer-policy-text {
   color: #9898a0;
