@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UKOSPEDITION</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,10 +18,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -38,9 +34,11 @@
       <div class="header-nav-content">
         <nav class="header-nav">
           <ul>
-            <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-list-item">
-              <a class="nav-link" href="about.html">About us</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-link" href="#">Services</a>
@@ -60,187 +58,110 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="hero-info">
-            <h1 class="hero-title">
-              Fast and reliable transport services and logistics
-            </h1>
-            <a href="./about.html" class="hero-btn btn">Explore more</a>
+      <section class="about-hero">
+        <h1 class="title about-title wrapper">About Us</h1>
+      </section>
+      <section class="about-us">
+        <div class="about-us-container wrapper">
+          <div class="about-us-img-container">
+            <img
+              src="./src/img/about-us-img-big.jpg"
+              alt=""
+              class="about-us-big-img"
+            />
+            <img
+              src="./src/img/about-us-img-small.jpg"
+              alt=""
+              class="about-us-small-img"
+            />
           </div>
-
-          <img class="hero-img" src="./src/img/hero-auto.png" alt="" />
-        </div>
-      </section>
-      <section class="offer">
-        <div class="offer-content">
-          <h2 class="offer-title title">Why Choose Us?</h2>
-          <div class="offer-cards">
-            <div class="card">
-              <img
-                class="offer-card-img"
-                alt=""
-                src="./src/img/courier-icon.png"
-              />
-              <p class="offer-card-text">Optimized Cost</p>
+          <div class="about-us-content">
+            <span class="label about-us-label">Transportation company</span>
+            <h2 class="about-us-title title">Driving success forward</h2>
+            <p class="about-us-descript">
+              At UKOSpedition, we are dedicated to providing reliable,
+              efficient, and innovative transportation and logistics solutions.
+            </p>
+            <p class="about-us-info">
+              With our expertise, timely deliveries, and personalized service,
+              we ensure your freight moves smoothly every time.
+            </p>
+            <div class="about-us-our-container">
+              <span class="about-us-our-title">Our Mission</span>
+              <p class="about-us-our-descript">
+                To deliver seamless and cost-effective logistics solutions while
+                maintaining the highest standards of reliability, efficiency,
+                and customer satisfaction. We strive to simplify transportation
+                challenges and build long-term partnerships through trust and
+                excellence.
+              </p>
             </div>
-            <div class="card">
-              <img
-                class="offer-card-img"
-                alt=""
-                src="./src/img/insurance-icon.png"
-              />
-              <p class="offer-card-text">Reduced Transit Time</p>
+            <div class="about-us-our-container">
+              <span class="about-us-our-title">Our Vision </span>
+              <p class="about-us-our-descript">
+                To be a leading global logistics provider, setting the benchmark
+                for innovation, sustainability, and exceptional service in the
+                transportation industry.
+              </p>
             </div>
-            <div class="card">
-              <img
-                class="offer-card-img"
-                alt=""
-                src="./src/img/cargo-icon.png"
-              />
-              <p class="offer-card-text">Delivery on Time</p>
-            </div>
+            <img
+              src="./src/img/about-us-arrow.png"
+              alt=""
+              class="about-us-arrow"
+            />
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="about-img-container">
-          <img src="./src/img/about-img-big.jpg" alt="" class="about-img-big" />
-          <img
-            src="./src/img/about-img-small.jpg"
-            alt=""
-            class="about-img-small"
-          />
-        </div>
-
-        <div class="about-content">
-          <span class="about-label label">About company</span>
-          <h2 class="about-title title">
-            At UKOspedition, we are a leading transportation company dedicated
-            to providing fast and reliable services across various industries.
-          </h2>
-          <p class="about-descript">
-            Smart, simple, and reliable transport solutions.
-          </p>
-          <p class="about-info">
-            We specialize in reliable and efficient transportation and logistics
-            solutions. With a customer-focused approach, we simplify freight
-            management, ensuring smooth and timely deliveries. Whether local or
-            international, we are committed to providing seamless,
-            cost-effective, and tailored logistics services to meet your needs.
-          </p>
-        </div>
-        <img
-          src="./src/img/about-img-botom.png"
-          alt=""
-          class="about-img-bottom"
-        />
-      </section>
-      <section class="services">
-        <span class="label services-label"
-          >Specialise In The Transportation</span
-        >
-        <h2 class="title services-title">Specialist logistics services</h2>
-        <div class="swiper services-card-swiper">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              style="background-image: url('./src/img/slide1.jpg')"
-            >
-              <img
-                src="./src/img/air-freight-icon.png"
-                alt=""
-                class="services-card-img"
-              />
-              <div class="services-card-info">
-                <p class="services-card-category">Logistics</p>
-                <p class="services-card-descript">Other Solution</p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('./src/img/slide2.jpg')"
-            >
-              <img
-                src="./src/img/ship-icon.png"
-                alt=""
-                class="services-card-img"
-              />
-              <div class="services-card-info">
-                <p class="services-card-category">Analytics</p>
-                <p class="services-card-descript">Refrigerator trucks</p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('./src/img/slide3.jpg')"
-            >
-              <img
-                src="./src/img/truck-icon.png"
-                alt=""
-                class="services-card-img"
-              />
-              <div class="services-card-info">
-                <p class="services-card-category">Warehouse</p>
-                <p class="services-card-descript">Road service</p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('./src/img/slide4.jpg')"
-            >
-              <img
-                src="./src/img/air-freight-icon.png"
-                alt=""
-                class="services-card-img"
-              />
-              <div class="services-card-info">
-                <p class="services-card-category">Logistics</p>
-                <p class="services-card-descript">Air Freight</p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('./src/img/slide5.jpg')"
-            >
-              <img
-                src="./src/img/ship-icon.png"
-                alt=""
-                class="services-card-img"
-              />
-              <div class="services-card-info">
-                <p class="services-card-category">Analytics</p>
-                <p class="services-card-descript">Refrigerator trucks</p>
-              </div>
-            </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url('./src/img/slide3.jpg')"
-            >
-              <img
-                src="./src/img/truck-icon.png"
-                alt=""
-                class="services-card-img"
-              />
-              <div class="services-card-info">
-                <p class="services-card-category">Warehouse</p>
-                <p class="services-card-descript">Road service</p>
-              </div>
-            </div>
+      <section class="choose-us">
+        <h2 class="title choose-us-title">Who Choose Us?</h2>
+        <div class="choose-card-container wrapper">
+          <div class="choose-us-card">
+            <img
+              src="./src/img/delivery-icon.png"
+              alt=""
+              class="choose-us-card-img"
+            />
+            <p class="choose-us-card-text">
+              On-Time <br />
+              Deliveries
+            </p>
+          </div>
+          <div class="choose-us-card">
+            <img
+              src="./src/img/support-icon.png"
+              alt=""
+              class="choose-us-card-img"
+            />
+            <p class="choose-us-card-text">
+              24/7 <br />
+              Support
+            </p>
+          </div>
+          <div class="choose-us-card">
+            <img
+              src="./src/img/real-time-icon.png"
+              alt=""
+              class="choose-us-card-img"
+            />
+            <p class="choose-us-card-text">
+              Real Time <br />
+              Tracking
+            </p>
+          </div>
+          <div class="choose-us-card">
+            <img
+              src="./src/img/transit-time-icon.png"
+              alt=""
+              class="choose-us-card-img"
+            />
+            <p class="choose-us-card-text">
+              Reduced <br />
+              Transit Time
+            </p>
           </div>
         </div>
       </section>
       <section class="feedback">
-        <div class="feedback-content">
-          <span class="feedback-label label">Get in touch with us anytime</span>
-          <h2 class="title feedback-title">
-            Looking for fast and <br />
-            efficient transport solutions?
-          </h2>
-          <button class="btn feedback-btn" id="openModal">Get a quote</button>
-        </div>
-      </section>
-      <section class="opportunity">
         <div class="opportunity-contact">
           <p class="opportunity-contact-descript semi-title">
             Trusted transportation company
@@ -257,52 +178,13 @@
             >
           </div>
         </div>
-        <div class="opportunity-content">
-          <img
-            src="./src/img/opportunity-bg.jpg"
-            alt=""
-            class="opportunity-content-img"
-          />
-          <div class="opportunity-info">
-            <span class="label opportunity-label">Why Choose Us</span>
-            <h2 class="opportunity-title title">
-              Connecting potential with success.
-            </h2>
-            <p class="opportunity-descript">
-              UKOspedition delivers seamless logistics and transportation
-              solutions tailored to your needs. With our expertise, timely
-              deliveries, and personalized service, we ensure your freight moves
-              smoothly every time.
-            </p>
-            <div class="opportinity-cards">
-              <div class="card-opportunity">
-                <img
-                  src="./src/img/delivery-box-icon.png"
-                  alt=""
-                  class="card-opportunity-img"
-                />
-                <p class="card-opportunity-descript">
-                  Safety & reliable service
-                </p>
-                <!-- <p class="card-opportunity-text">
-                  Nullam mollis elit quis dus is lacinia not efficitur
-                </p> -->
-              </div>
-              <div class="card-opportunity">
-                <img
-                  src="./src/img/tracking-icon.png"
-                  alt=""
-                  class="card-opportunity-img"
-                />
-                <p class="card-opportunity-descript">
-                  Real time tracking system
-                </p>
-                <!-- <p class="card-opportunity-text">
-                  Nullam mollis elit quis dus is lacinia not efficitur
-                </p> -->
-              </div>
-            </div>
-          </div>
+        <div class="feedback-content">
+          <span class="feedback-label label">Get in touch with us anytime</span>
+          <h2 class="title feedback-title">
+            Looking for fast and <br />
+            efficient transport solutions?
+          </h2>
+          <button class="btn feedback-btn" id="openModal">Get a quote</button>
         </div>
       </section>
     </main>
@@ -588,32 +470,5 @@
       </div>
     </div>
     <script src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.services-card-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        breakpoints: {
-          420: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          850: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1124: {
-            slidesPerView: 5,
-            spaceBetween: 40,
-          },
-        },
-      });
-    </script>
   </body>
 </html>
