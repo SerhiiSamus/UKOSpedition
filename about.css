@@ -406,6 +406,7 @@ ul {
 }
 .opportunity-contact-number {
   color: #ffffff;
+  text-decoration: none;
 }
 .feedback {
   margin-top: 150px;
@@ -944,10 +945,13 @@ ul {
     flex: 0 0 70%;
   }
   .about-us-img-container::after {
-    content: none;
+    /* content: none; */
   }
   .about-us-img-container::before {
-    content: none;
+    width: 10px;
+  }
+  .about-us-arrow {
+    min-height: 250px;
   }
 }
 /* * {

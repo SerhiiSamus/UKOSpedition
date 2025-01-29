@@ -556,6 +556,7 @@ ul {
 }
 .opportunity-contact-number {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .opportunity-content {
