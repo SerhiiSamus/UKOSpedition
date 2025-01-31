@@ -220,7 +220,21 @@ ul {
 .our-services {
   position: relative;
 }
+.our-services-label::before {
+  content: '';
+  top: -20px;
+  position: absolute;
+  width: 35%;
+  height: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 112, 0, 1) 0%,
+    rgba(231, 112, 0, 0.7) 100%
+  );
+}
 .our-services-wrapper {
+  margin-top: 100px;
   position: relative;
   z-index: 2;
   padding-left: 20px;
@@ -396,13 +410,13 @@ ul {
   text-decoration: none;
 }
 .feedback {
-  margin-top: 150px;
+  margin-top: 250px;
   background-image: url('./src/img/fleet.jpg');
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .feedback::before {
   content: '';
