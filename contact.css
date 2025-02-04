@@ -220,7 +220,7 @@ ul {
 
 /* CONTACT US SECTION */
 .contact-us {
-  padding-top: 200px;
+  padding-top: 1px;
   background-color: #f7f5ef;
   position: relative;
   padding-bottom: 100px;
@@ -242,6 +242,7 @@ ul {
   padding: 40px;
   max-width: 1000px;
   margin: auto;
+  margin-top: 200px;
   z-index: 4;
 }
 .contact-us-content {
@@ -651,6 +652,12 @@ ul {
   .card {
     flex: 1;
   }
+  .contact-map {
+    padding-top: 50px;
+  }
+  .contact-label-container {
+    margin-top: 50px;
+  }
   .card-footer {
     padding: 20px;
   }
@@ -705,6 +712,16 @@ ul {
     flex-direction: column;
     text-align: center;
   }
+  .contact-us-content {
+    flex-direction: column-reverse;
+  }
+  .contact-us-wrapper {
+    margin-top: 100px;
+  }
+  .contact-us::before {
+    background-position-x: 20vw;
+    background-position-y: -100px;
+  }
   .show {
     transform: translateX(0);
   }
@@ -716,6 +733,16 @@ ul {
   }
 }
 @media (max-width: 650px) {
+  .contact-label-container {
+    margin-top: 10px;
+    flex-direction: column;
+    max-width: 50vw;
+    gap: 10px;
+    align-items: center;
+  }
+  .contact-label-info {
+    align-items: center;
+  }
   .footer-content {
     justify-content: start;
   }
