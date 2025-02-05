@@ -357,12 +357,16 @@ ul {
   width: 40%;
   row-gap: 10px;
 }
+.work {
+  align-items: flex-start;
+}
 .opportunity-contact-text {
   color: #ffffff;
 }
 .opportunity-contact-number {
   color: #ffffff;
   text-decoration: none;
+  font-size: clamp(1rem, 3vw, 1.55rem);
 }
 .feedback {
   margin-top: 300px;
@@ -413,6 +417,7 @@ ul {
   row-gap: 30px;
   align-items: center;
   padding-bottom: 100px;
+  min-height: 200px;
 }
 .feedback-title {
   color: #ffffff;
