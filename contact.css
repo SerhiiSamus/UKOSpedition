@@ -223,11 +223,11 @@ ul {
   padding-top: 1px;
   background-color: #f7f5ef;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 300px;
 }
 .contact-us::before {
   background-position-x: 25vw;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
   position: absolute;
@@ -390,7 +390,6 @@ ul {
   padding: 10px 30px;
 }
 .contact-map {
-  padding-top: 200px;
   background-color: #f7f5ef;
 }
 /*FOOTER SECTION*/
@@ -657,11 +656,17 @@ ul {
   .card {
     flex: 1;
   }
+  .contact-us {
+    padding-bottom: 200px;
+  }
   .contact-map {
     padding-top: 50px;
   }
   .contact-label-container {
-    margin-top: 50px;
+    margin-top: 135px;
+  }
+  .contact-us-wrapper {
+    margin-top: 100px;
   }
   .card-footer {
     padding: 20px;
@@ -693,7 +698,7 @@ ul {
     justify-content: space-evenly;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 890px) {
   .menu__mobile {
     display: block;
   }
@@ -724,8 +729,8 @@ ul {
     margin-top: 100px;
   }
   .contact-us::before {
-    background-position-x: 20vw;
-    background-position-y: -100px;
+    background-position-x: -150px;
+    background-position-y: 50px;
   }
   .show {
     transform: translateX(0);
