@@ -946,6 +946,12 @@ ul {
     font-size: 18px;
   }
 }
+@media (max-width: 419px) {
+  .swiper {
+    padding: 0 20px !important;
+    box-sizing: border-box;
+  }
+}
 /* * {
     border: 1px solid red;
   } */

@@ -890,7 +890,7 @@ ul {
   }
   .about-us-container {
     flex-direction: column-reverse;
-    padding: 0 50px;
+    padding: 0 30px;
   }
   .about-us-arrow {
     min-height: 300px;
@@ -939,7 +939,7 @@ ul {
     font-size: 18px;
   }
   .about-hero {
-    height: 40vh;
+    height: 60vh;
   }
   .choose-us-card {
     flex: 0 0 70%;
