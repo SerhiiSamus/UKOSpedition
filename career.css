@@ -236,6 +236,7 @@ ul {
 
 .join-us-img {
   max-width: 45%;
+  object-fit: contain;
 }
 .join-us-content {
   margin-top: 30px;
@@ -671,6 +672,11 @@ ul {
     transform: translateY(0);
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 1150px) {
   .nav-link {
     padding: 0px 20px 0px 10px;
@@ -739,6 +745,21 @@ ul {
   .header-nav ul {
     flex-direction: column;
     text-align: center;
+  }
+  .join-us-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column-reverse;
+    padding: 0 5%;
+    align-items: center;
+  }
+  .join-us-img {
+    max-width: 60%;
+  }
+  .work-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
   .show {
     transform: translateX(0);
