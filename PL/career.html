@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <link rel="stylesheet" href="about.css" />
+    <title>Careers</title>
+    <link rel="stylesheet" href="../career.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,11 +19,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
       <span class="logo">
-        <img class="logo-img" src="./src/img/Logo.png" alt="" />
+        <img class="logo-img" src="../src/img/Logo.png" alt="" />
         <a href="index.html" class="logo-text">Ukospedition</a>
       </span>
       <div class="menu__mobile">
@@ -35,158 +39,130 @@
         <nav class="header-nav">
           <ul>
             <li class="nav-list-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Strona główna</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">O nas</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="services.html">Usługi</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="career.html">Careers</a>
+              <a class="nav-link" href="#">Kariera</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
+              <a class="nav-link" href="contact.html">Skontaktuj się z nami</a>
             </li>
           </ul>
         </nav>
         <div class="nav-lang">
-          <a href="#" class="nav-lang-link active-lang">EN</a>
-          <a href="PL/about.html" class="nav-lang-link">PL</a>
+          <a href="../career.html" class="nav-lang-link">EN</a>
+          <a href="#" class="nav-lang-link active-lang">PL</a>
         </div>
       </div>
     </header>
     <main>
-      <section class="about-hero">
-        <h1 class="title about-title wrapper">About Us</h1>
+      <section class="career-hero">
+        <h1 class="title career-title wrapper">Kariera</h1>
       </section>
-      <section class="about-us">
-        <div class="about-us-container wrapper">
-          <div class="about-us-img-container">
-            <img
-              src="./src/img/about-us-img-big.jpg"
-              alt=""
-              class="about-us-big-img"
-            />
-            <img
-              src="./src/img/about-us-img-small.jpg"
-              alt=""
-              class="about-us-small-img"
-            />
-          </div>
-          <div class="about-us-content">
-            <span class="label about-us-label">Transportation company</span>
-            <h2 class="about-us-title title">Driving success forward</h2>
-            <p class="about-us-descript">
-              At UKOSpedition, we are dedicated to providing reliable,
-              efficient, and innovative transportation and logistics solutions.
+      <section class="join-us">
+        <div class="join-us-container wrapper">
+          <img src="../src/img/work-img.png" alt="" class="join-us-img" />
+          <div class="join-us-content">
+            <span class="join-us-label label">FIRMA TRANSPORTOWA</span>
+            <h2 class="join-us-title title">Dołącz do naszego zespołu!</h2>
+            <p class="join-us-descript">
+              We’re looking for CE-licensed drivers. If you're seeking a dynamic
+              workplace with exciting opportunities, we’d love to have you on
+              board!
             </p>
-            <p class="about-us-info">
-              With our expertise, timely deliveries, and personalized service,
-              we ensure your freight moves smoothly every time.
+            <p class="join-us-info">
+              Join our team and be part of the revolution in the logistics
+              industry! At UKOspedition, we believe in the power of teamwork and
+              welcome talented individuals eager to achieve their ambitions and
+              grow with us.
             </p>
-            <div class="about-us-our-container">
-              <span class="about-us-our-title">Our Mission</span>
-              <p class="about-us-our-descript">
-                To deliver seamless and cost-effective logistics solutions while
-                maintaining the highest standards of reliability, efficiency,
-                and customer satisfaction. We strive to simplify transportation
-                challenges and build long-term partnerships through trust and
-                excellence.
-              </p>
-            </div>
-            <div class="about-us-our-container">
-              <span class="about-us-our-title">Our Vision </span>
-              <p class="about-us-our-descript">
-                To be a leading global logistics provider, setting the benchmark
-                for innovation, sustainability, and exceptional service in the
-                transportation industry.
-              </p>
-            </div>
-            <img
-              src="./src/img/about-us-arrow.png"
-              alt=""
-              class="about-us-arrow"
-            />
           </div>
         </div>
       </section>
-      <section class="choose-us">
-        <h2 class="title choose-us-title">Why Choose Us?</h2>
-        <div class="choose-card-container wrapper">
-          <div class="choose-us-card">
-            <img
-              src="./src/img/delivery-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              On-Time <br />
-              Deliveries
-            </p>
-          </div>
-          <div class="choose-us-card">
-            <img
-              src="./src/img/support-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              24/7 <br />
-              Support
-            </p>
-          </div>
-          <div class="choose-us-card">
-            <img
-              src="./src/img/real-time-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              Real Time <br />
-              Tracking
-            </p>
-          </div>
-          <div class="choose-us-card">
-            <img
-              src="./src/img/transit-time-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              Reduced <br />
-              Transit Time
-            </p>
+      <section class="work-with-us">
+        <div class="work-with-us-content">
+          <h2 class="work-with-us-title title">Why Work With Us?</h2>
+          <div class="work-card-container wrapper">
+            <div class="work-card">
+              <img
+                src="../src/img/work-benefits.png"
+                alt=""
+                class="work-card-img"
+              />
+              <p class="work-card-text">Stable Pay & Benefits</p>
+            </div>
+            <div class="work-card">
+              <img
+                src="../src/img/work-develop.png"
+                alt=""
+                class="work-card-img"
+              />
+              <p class="work-card-text">Professional Development</p>
+            </div>
+            <div class="work-card">
+              <img
+                src="../src/img/work-friendly.png"
+                alt=""
+                class="work-card-img"
+              />
+              <p class="work-card-text">Friendly work environment</p>
+            </div>
+            <div class="work-card">
+              <img
+                src="../src/img/work-modern.png"
+                alt=""
+                class="work-card-img"
+              />
+              <p class="work-card-text">Modern vehicle fleet</p>
+            </div>
+            <div class="work-card">
+              <img
+                src="../src/img/work-security.png"
+                alt=""
+                class="work-card-img"
+              />
+              <p class="work-card-text">Job Security</p>
+            </div>
           </div>
         </div>
       </section>
       <section class="feedback">
         <div class="opportunity-contact">
-          <p class="opportunity-contact-descript semi-title">
-            Trusted transportation company
-          </p>
+          <div class="opportunity-contact-info work">
+            <span class="opportunity-contact-number semi-title"
+              >Interested in joining our team?</span
+            >
+            <span class="opportunity-contact-text"
+              >Submit your application</span
+            >
+          </div>
           <img
-            src="./src/img/manager-icon.png"
+            src="../src/img/work-cv.png"
             alt=""
             class="opportunity-contact-img"
           />
           <div class="opportunity-contact-info">
-            <span class="opportunity-contact-text">Get professional help</span>
-            <a
-              href="tel:+48575831810"
-              class="opportunity-contact-number semi-title"
-              >+48 57 583 18 10</a
+            <span class="opportunity-contact-number semi-title"
+              >Email us at</span
+            >
+            <span class="opportunity-contact-text"
+              >ukospedition@ukospedition.com</span
             >
           </div>
         </div>
         <div class="feedback-content">
-          <span class="feedback-label label">Get in touch with us anytime</span>
+          <!-- <span class="feedback-label label">Get in touch with us anytime</span>
           <h2 class="title feedback-title">
             Looking for fast and <br />
             efficient transport solutions?
           </h2>
-          <button class="btn feedback-btn" id="openModal">Get a quote</button>
+          <button class="btn feedback-btn" id="openModal">Get a quote</button> -->
         </div>
       </section>
     </main>
@@ -194,7 +170,7 @@
       <div class="footer-wrapper">
         <div class="footer-cards">
           <div class="card-footer">
-            <img src="./src/img/location.png" alt="" class="card-footer-img" />
+            <img src="../src/img/location.png" alt="" class="card-footer-img" />
             <div class="card-footer-content">
               <p class="card-footer-category">Addres</p>
               <p class="card-footer-text">
@@ -204,7 +180,7 @@
             </div>
           </div>
           <div class="card-footer">
-            <img src="./src/img/mobile.png" alt="" class="card-footer-img" />
+            <img src="../src/img/mobile.png" alt="" class="card-footer-img" />
             <div class="card-footer-content">
               <p class="card-footer-category">Contact</p>
               <p class="card-footer-text">
@@ -214,7 +190,7 @@
             </div>
           </div>
           <div class="card-footer">
-            <img src="./src/img/timing.png" alt="" class="card-footer-img" />
+            <img src="../src/img/timing.png" alt="" class="card-footer-img" />
             <div class="card-footer-content">
               <p class="card-footer-category">Timing</p>
               <p class="card-footer-text">
@@ -227,7 +203,7 @@
         <div class="footer-content">
           <div class="footer-company">
             <a href="" class="footer-logo">
-              <img src="./src/img/Logo.png" alt="" class="footer-logo-img" />
+              <img src="../src/img/Logo.png" alt="" class="footer-logo-img" />
               <span class="footer-logo-text">UKOSpedition</span>
             </a>
             <p class="footer-company-descript">
@@ -241,10 +217,10 @@
             <h5 class="footer-section-title">Services</h5>
             <ul class="footer-list">
               <li class="footer-list-item">
-                <a href="#" class="footer-list-link"> About Us </a>
+                <a href="about.html" class="footer-list-link"> About Us </a>
               </li>
               <li class="footer-list-item">
-                <a href="career.html" class="footer-list-link">Our Team </a>
+                <a href="#" class="footer-list-link">Our Team </a>
               </li>
               <li class="footer-list-item">
                 <a href="contact.html" class="footer-list-link">Contact Us </a>
@@ -255,7 +231,7 @@
             <h5 class="footer-section-title">Useful Links</h5>
             <ul class="footer-list">
               <li class="footer-list-item">
-                <a href="#" class="footer-list-link">About </a>
+                <a href="about.html" class="footer-list-link">About </a>
               </li>
               <li class="footer-list-item">
                 <a href="contact.html" class="footer-list-link"> Contact </a>
@@ -409,50 +385,18 @@
         </div>
       </div>
     </footer>
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close-btn" id="closeModal">&times;</span>
-        <h2>Request a Quote</h2>
-        <form class="form-rows">
-          <!-- Row 1: Email -->
-          <div class="form-row">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <!-- Row 2: Name and Phone -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone No:</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-          </div>
-
-          <!-- Row 3: Departure and Deliver -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="departure">Departure:</label>
-              <input type="text" id="departure" name="departure" required />
-            </div>
-            <div class="form-group">
-              <label for="deliver">Deliver:</label>
-              <input type="text" id="deliver" name="deliver" required />
-            </div>
-          </div>
-
-          <!-- Row 4: Freight and Load -->
-
-          <!-- Row 5: Submit Button -->
-          <div class="form-row">
-            <button type="submit" class="btn submit">Submit Request</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <script src="./script.js"></script>
+    <script>
+      const button = document.querySelector('.menu__mobile_button');
+      const header = document.querySelector('.header-nav-content');
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+      });
+      button.addEventListener('click', () => {
+        header.classList.toggle('show');
+      });
+      button.addEventListener('click', () => {
+        document.body.classList.toggle('no-scroll');
+      });
+    </script>
   </body>
 </html>

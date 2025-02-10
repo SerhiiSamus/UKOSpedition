@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <link rel="stylesheet" href="about.css" />
+    <title>UKOSPEDITION</title>
+    <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
       <span class="logo">
-        <img class="logo-img" src="./src/img/Logo.png" alt="" />
-        <a href="index.html" class="logo-text">Ukospedition</a>
+        <img class="logo-img" src="../src/img/Logo.png" alt="" />
+        <a href="#" class="logo-text">Ukospedition</a>
       </span>
       <div class="menu__mobile">
         <div class="menu__mobile_button">
@@ -35,144 +39,232 @@
         <nav class="header-nav">
           <ul>
             <li class="nav-list-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#">Strona główna</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">O nas</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="services.html">Usługi</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="career.html">Careers</a>
+              <a class="nav-link" href="career.html">Kariera</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
+              <a class="nav-link" href="contact.html">Skontaktuj się z nami</a>
             </li>
           </ul>
         </nav>
         <div class="nav-lang">
-          <a href="#" class="nav-lang-link active-lang">EN</a>
-          <a href="PL/about.html" class="nav-lang-link">PL</a>
+          <a href="../index.html" class="nav-lang-link">EN</a>
+          <a href="#" class="nav-lang-link active-lang">PL</a>
         </div>
       </div>
     </header>
     <main>
-      <section class="about-hero">
-        <h1 class="title about-title wrapper">About Us</h1>
-      </section>
-      <section class="about-us">
-        <div class="about-us-container wrapper">
-          <div class="about-us-img-container">
-            <img
-              src="./src/img/about-us-img-big.jpg"
-              alt=""
-              class="about-us-big-img"
-            />
-            <img
-              src="./src/img/about-us-img-small.jpg"
-              alt=""
-              class="about-us-small-img"
-            />
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-info">
+            <h1 class="hero-title">
+              Szybkie i niezawodne usługi transportowe i logistyczne
+            </h1>
+            <a href="./about.html" class="hero-btn btn">Dowiedz się więcej</a>
           </div>
-          <div class="about-us-content">
-            <span class="label about-us-label">Transportation company</span>
-            <h2 class="about-us-title title">Driving success forward</h2>
-            <p class="about-us-descript">
-              At UKOSpedition, we are dedicated to providing reliable,
-              efficient, and innovative transportation and logistics solutions.
-            </p>
-            <p class="about-us-info">
-              With our expertise, timely deliveries, and personalized service,
-              we ensure your freight moves smoothly every time.
-            </p>
-            <div class="about-us-our-container">
-              <span class="about-us-our-title">Our Mission</span>
-              <p class="about-us-our-descript">
-                To deliver seamless and cost-effective logistics solutions while
-                maintaining the highest standards of reliability, efficiency,
-                and customer satisfaction. We strive to simplify transportation
-                challenges and build long-term partnerships through trust and
-                excellence.
-              </p>
+
+          <img class="hero-img" src="../src/img/hero-auto.png" alt="" />
+        </div>
+      </section>
+      <section class="offer">
+        <div class="offer-content">
+          <h2 class="offer-title title">Dlaczego warto nas wybrać?</h2>
+          <div class="offer-cards">
+            <div class="card">
+              <img
+                class="offer-card-img"
+                alt=""
+                src="../src/img/courier-icon.png"
+              />
+              <p class="offer-card-text">Optymalny koszt</p>
             </div>
-            <div class="about-us-our-container">
-              <span class="about-us-our-title">Our Vision </span>
-              <p class="about-us-our-descript">
-                To be a leading global logistics provider, setting the benchmark
-                for innovation, sustainability, and exceptional service in the
-                transportation industry.
-              </p>
+            <div class="card">
+              <img
+                class="offer-card-img"
+                alt=""
+                src="../src/img/insurance-icon.png"
+              />
+              <p class="offer-card-text">Skrócony czas tranzytu</p>
             </div>
-            <img
-              src="./src/img/about-us-arrow.png"
-              alt=""
-              class="about-us-arrow"
-            />
+            <div class="card">
+              <img
+                class="offer-card-img"
+                alt=""
+                src="../src/img/cargo-icon.png"
+              />
+              <p class="offer-card-text">Dostawa na czas</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="choose-us">
-        <h2 class="title choose-us-title">Why Choose Us?</h2>
-        <div class="choose-card-container wrapper">
-          <div class="choose-us-card">
-            <img
-              src="./src/img/delivery-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              On-Time <br />
-              Deliveries
-            </p>
-          </div>
-          <div class="choose-us-card">
-            <img
-              src="./src/img/support-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              24/7 <br />
-              Support
-            </p>
-          </div>
-          <div class="choose-us-card">
-            <img
-              src="./src/img/real-time-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              Real Time <br />
-              Tracking
-            </p>
-          </div>
-          <div class="choose-us-card">
-            <img
-              src="./src/img/transit-time-icon.png"
-              alt=""
-              class="choose-us-card-img"
-            />
-            <p class="choose-us-card-text">
-              Reduced <br />
-              Transit Time
-            </p>
+      <section class="about">
+        <div class="about-img-container">
+          <img
+            src="../src/img/about-img-big.jpg"
+            alt=""
+            class="about-img-big"
+          />
+          <img
+            src="../src/img/about-img-small.jpg"
+            alt=""
+            class="about-img-small"
+          />
+        </div>
+
+        <div class="about-content">
+          <span class="about-label label">O firmie</span>
+          <h2 class="about-title title">
+            W UKOspedition jesteśmy wiodącą firmą transportową, która oferuje
+            szybkie i niezawodne usługi w różnych branżach.
+          </h2>
+          <p class="about-descript">
+            Inteligentne, proste i niezawodne rozwiązania transportowe.
+          </p>
+          <p class="about-info">
+            Specjalizujemy się w niezawodnych i efektywnych rozwiązaniach
+            transportowych i logistycznych. Dzięki podejściu zorientowanemu na
+            klienta upraszczamy zarządzanie ładunkami, zapewniając płynne i
+            terminowe dostawy. Niezależnie od tego, czy transport jest lokalny
+            czy międzynarodowy, oferujemy kompleksowe, ekonomiczne i dopasowane
+            usługi logistyczne dostosowane do Twoich potrzeb.
+          </p>
+        </div>
+        <img
+          src="../src/img/about-img-botom.png"
+          alt=""
+          class="about-img-bottom"
+        />
+      </section>
+      <section class="services">
+        <span class="label services-label"
+          >Specjalizujemy się w transporcie</span
+        >
+        <h2 class="title services-title">Specjalistyczne usługi logistyczne</h2>
+        <div class="swiper services-card-swiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url('../src/img/slide1.jpg')"
+            >
+              <img
+                src="../src/img/air-freight-icon.png"
+                alt=""
+                class="services-card-img"
+              />
+              <div class="services-card-info">
+                <p class="services-card-category">Logistyka</p>
+                <p class="services-card-descript">Inne rozwiązania</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('../src/img/slide2.jpg')"
+            >
+              <img
+                src="../src/img/ship-icon.png"
+                alt=""
+                class="services-card-img"
+              />
+              <div class="services-card-info">
+                <p class="services-card-category">Analityka</p>
+                <p class="services-card-descript">Chłodnie ciężarowe</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('../src/img/slide3.jpg')"
+            >
+              <img
+                src="../src/img/truck-icon.png"
+                alt=""
+                class="services-card-img"
+              />
+              <div class="services-card-info">
+                <p class="services-card-category">Magazyn</p>
+                <p class="services-card-descript">Usługi drogowe</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('../src/img/slide4.jpg')"
+            >
+              <img
+                src="../src/img/air-freight-icon.png"
+                alt=""
+                class="services-card-img"
+              />
+              <div class="services-card-info">
+                <p class="services-card-category">Logistics</p>
+                <p class="services-card-descript">Transport lotniczy</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('../src/img/slide5.jpg')"
+            >
+              <img
+                src="../src/img/ship-icon.png"
+                alt=""
+                class="services-card-img"
+              />
+              <div class="services-card-info">
+                <p class="services-card-category">Analityka</p>
+                <p class="services-card-descript">Chłodnie ciężarowe</p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('../src/img/slide3.jpg')"
+            >
+              <img
+                src="../src/img/truck-icon.png"
+                alt=""
+                class="services-card-img"
+              />
+              <div class="services-card-info">
+                <p class="services-card-category">Magazyn</p>
+                <p class="services-card-descript">Usługi drogowe</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="feedback">
+        <div class="feedback-content">
+          <span class="feedback-label label"
+            >Skontaktuj się z nami w dowolnym momencie</span
+          >
+          <h2 class="title feedback-title">
+            zukasz szybkich i <br />
+            efektywnych rozwiązań transportowych?
+          </h2>
+          <button class="btn feedback-btn" id="openModal">
+            Uzyskaj wycenę
+          </button>
+        </div>
+      </section>
+      <section class="opportunity">
         <div class="opportunity-contact">
           <p class="opportunity-contact-descript semi-title">
-            Trusted transportation company
+            Zaufana firma transportowa
           </p>
           <img
-            src="./src/img/manager-icon.png"
+            src="../src/img/manager-icon.png"
             alt=""
             class="opportunity-contact-img"
           />
           <div class="opportunity-contact-info">
-            <span class="opportunity-contact-text">Get professional help</span>
+            <span class="opportunity-contact-text"
+              >Uzyskaj profesjonalną pomoc</span
+            >
             <a
               href="tel:+48575831810"
               class="opportunity-contact-number semi-title"
@@ -180,13 +272,54 @@
             >
           </div>
         </div>
-        <div class="feedback-content">
-          <span class="feedback-label label">Get in touch with us anytime</span>
-          <h2 class="title feedback-title">
-            Looking for fast and <br />
-            efficient transport solutions?
-          </h2>
-          <button class="btn feedback-btn" id="openModal">Get a quote</button>
+        <div class="opportunity-content">
+          <img
+            src="../src/img/opportunity-bg.jpg"
+            alt=""
+            class="opportunity-content-img"
+          />
+          <div class="opportunity-info">
+            <span class="label opportunity-label"
+              >Dlaczego warto nas wybrać</span
+            >
+            <h2 class="opportunity-title title">
+              Łączenie potencjału z sukcesem.
+            </h2>
+            <p class="opportunity-descript">
+              UKOspedition dostarcza kompleksowe rozwiązania logistyczne i
+              transportowe dostosowane do Twoich potrzeb. Dzięki naszej wiedzy,
+              terminowym dostawom i spersonalizowanej obsłudze zapewniamy, że
+              Twój ładunek dotrze bez przeszkód.
+            </p>
+            <div class="opportinity-cards">
+              <div class="card-opportunity">
+                <img
+                  src="../src/img/delivery-box-icon.png"
+                  alt=""
+                  class="card-opportunity-img"
+                />
+                <p class="card-opportunity-descript">
+                  Bezpieczeństwo i niezawodna obsługa
+                </p>
+                <!-- <p class="card-opportunity-text">
+                  Nullam mollis elit quis dus is lacinia not efficitur
+                </p> -->
+              </div>
+              <div class="card-opportunity">
+                <img
+                  src="../src/img/tracking-icon.png"
+                  alt=""
+                  class="card-opportunity-img"
+                />
+                <p class="card-opportunity-descript">
+                  System śledzenia w czasie rzeczywistym
+                </p>
+                <!-- <p class="card-opportunity-text">
+                  Nullam mollis elit quis dus is lacinia not efficitur
+                </p> -->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -194,9 +327,9 @@
       <div class="footer-wrapper">
         <div class="footer-cards">
           <div class="card-footer">
-            <img src="./src/img/location.png" alt="" class="card-footer-img" />
+            <img src="../src/img/location.png" alt="" class="card-footer-img" />
             <div class="card-footer-content">
-              <p class="card-footer-category">Addres</p>
+              <p class="card-footer-category">Adres</p>
               <p class="card-footer-text">
                 Powstańców 97, 05-870<br />
                 Błonie Poland
@@ -204,9 +337,9 @@
             </div>
           </div>
           <div class="card-footer">
-            <img src="./src/img/mobile.png" alt="" class="card-footer-img" />
+            <img src="../src/img/mobile.png" alt="" class="card-footer-img" />
             <div class="card-footer-content">
-              <p class="card-footer-category">Contact</p>
+              <p class="card-footer-category">Kontakt</p>
               <p class="card-footer-text">
                 ukospedition@ukospedition.com <br />
                 +48 57 583 18 10
@@ -214,12 +347,12 @@
             </div>
           </div>
           <div class="card-footer">
-            <img src="./src/img/timing.png" alt="" class="card-footer-img" />
+            <img src="../src/img/timing.png" alt="" class="card-footer-img" />
             <div class="card-footer-content">
-              <p class="card-footer-category">Timing</p>
+              <p class="card-footer-category">Godziny pracy</p>
               <p class="card-footer-text">
-                Mon - Sat: 8 am - 5 pm, <br />
-                Sunday: CLOSED
+                Pon - Sob: 8:00 - 17:00, <br />
+                Niedziela: ZAMKNIĘTE
               </p>
             </div>
           </div>
@@ -227,7 +360,7 @@
         <div class="footer-content">
           <div class="footer-company">
             <a href="" class="footer-logo">
-              <img src="./src/img/Logo.png" alt="" class="footer-logo-img" />
+              <img src="../src/img/Logo.png" alt="" class="footer-logo-img" />
               <span class="footer-logo-text">UKOSpedition</span>
             </a>
             <p class="footer-company-descript">
@@ -235,42 +368,46 @@
               challenges and creating new ones in <br />
               advertising sector. -->
             </p>
-            <a href="about.html" class="footer-compant-btn btn">Read more</a>
+            <a href="about.html" class="footer-compant-btn btn"
+              >Czytaj więcej</a
+            >
           </div>
           <div class="footer-services">
-            <h5 class="footer-section-title">Services</h5>
+            <h5 class="footer-section-title">Usługi</h5>
             <ul class="footer-list">
               <li class="footer-list-item">
-                <a href="#" class="footer-list-link"> About Us </a>
+                <a href="about.html" class="footer-list-link">O nas</a>
               </li>
               <li class="footer-list-item">
-                <a href="career.html" class="footer-list-link">Our Team </a>
+                <a href="career.html" class="footer-list-link">Nasz zespół</a>
               </li>
               <li class="footer-list-item">
-                <a href="contact.html" class="footer-list-link">Contact Us </a>
+                <a href="contact.html" class="footer-list-link"
+                  >Skontaktuj się z nami</a
+                >
               </li>
             </ul>
           </div>
           <div class="footer-links">
-            <h5 class="footer-section-title">Useful Links</h5>
+            <h5 class="footer-section-title">Przydatne linki</h5>
             <ul class="footer-list">
               <li class="footer-list-item">
-                <a href="#" class="footer-list-link">About </a>
+                <a href="about.html" class="footer-list-link">O nas</a>
               </li>
               <li class="footer-list-item">
-                <a href="contact.html" class="footer-list-link"> Contact </a>
+                <a href="contact.html" class="footer-list-link">Kontakt</a>
               </li>
 
               <li class="footer-list-item">
-                <a href="services.html" class="footer-list-link">Services </a>
+                <a href="services.html" class="footer-list-link">Usługi</a>
               </li>
             </ul>
           </div>
           <div class="footer-newsletter">
             <h5 class="footer-section-title">Newsletter</h5>
             <p class="footer-newsletter-descript">
-              Subscribe our newsletter to get our latest <br />
-              update & news
+              Zapisz się do naszego newslettera, aby otrzymywać najnowsze <br />
+              aktualizacje i wiadomości
             </p>
             <form action="" class="footer-newsletter-form">
               <input
@@ -412,22 +549,22 @@
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close-btn" id="closeModal">&times;</span>
-        <h2>Request a Quote</h2>
+        <h2>Poproś o wycenę</h2>
         <form class="form-rows">
           <!-- Row 1: Email -->
           <div class="form-row">
-            <label for="email">Your Email:</label>
+            <label for="email">Twój e-mail:</label>
             <input type="email" id="email" name="email" required />
           </div>
 
           <!-- Row 2: Name and Phone -->
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name:</label>
+              <label for="name">Twoje imię:</label>
               <input type="text" id="name" name="name" required />
             </div>
             <div class="form-group">
-              <label for="phone">Phone No:</label>
+              <label for="phone">Numer telefonu:</label>
               <input type="tel" id="phone" name="phone" required />
             </div>
           </div>
@@ -435,11 +572,11 @@
           <!-- Row 3: Departure and Deliver -->
           <div class="form-row">
             <div class="form-group">
-              <label for="departure">Departure:</label>
+              <label for="departure">Miejsce wyjazdu:</label>
               <input type="text" id="departure" name="departure" required />
             </div>
             <div class="form-group">
-              <label for="deliver">Deliver:</label>
+              <label for="deliver">Miejsce dostawy:</label>
               <input type="text" id="deliver" name="deliver" required />
             </div>
           </div>
@@ -448,11 +585,41 @@
 
           <!-- Row 5: Submit Button -->
           <div class="form-row">
-            <button type="submit" class="btn submit">Submit Request</button>
+            <button type="submit" class="btn submit">Prześlij prośbę</button>
           </div>
         </form>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.services-card-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        breakpoints: {
+          420: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          850: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1124: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
